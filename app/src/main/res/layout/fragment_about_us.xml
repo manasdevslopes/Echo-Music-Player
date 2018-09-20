@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context="com.universe.echo.fragments.AboutUsFragment">
+
+    <ImageView
+        android:id="@+id/imgDev"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/manas"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/txtData"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="This App is made by Universe Inc."
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:layout_below="@+id/imgDev"/>
+    <TextView
+        android:id="@+id/txtAppVersion"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App version: 1.0"
+        android:layout_centerInParent="true"
+        android:textColor="#bdbdbd"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_below="@+id/txtData"/>
+
+</RelativeLayout>
